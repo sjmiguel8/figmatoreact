@@ -1,0 +1,52 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.drag-drop-zone {
+  transition: all 0.2s ease;
+}
+
+.drag-drop-zone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.generated-code-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.generated-code-container pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.download-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.download-button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.download-button:hover:after {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+}

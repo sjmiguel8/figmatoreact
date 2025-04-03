@@ -1,0 +1,28 @@
+# Node dependencies
+node_modules/
+
+# Build output directory
+dist/
+
+# Caches
+.vite/
+
+# Environment variables file
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+*.log.*
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+.DS_Store
